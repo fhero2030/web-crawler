@@ -9,7 +9,7 @@ test("normalizeURL", () => {
 });
 
 test("getURLsFromHTML", () => {
-  const input = `<html><body><a href="https://hi.boot.dev/"><span>Go to Boot.dev</span></a></body></html>`;
+  const input = `<html><body><a href="https://blog.boot.dev/"><span>Go to Boot.dev</span></a></body></html>`;
   const inputBasedURL = "https://blog.boot.dev";
   const actual = getURLsFromHTML(input, inputBasedURL);
   const expected = ["https://blog.boot.dev/"];
